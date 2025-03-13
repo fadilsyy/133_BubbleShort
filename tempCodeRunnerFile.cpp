@@ -19,6 +19,7 @@ void inputData(){
         {
             cout << "Jumlah data maksimal 15" << endl;
         }
+
     }
     
 cout << "====================" << endl;
@@ -30,34 +31,8 @@ for (int i = 0; 1 < n; i++){
     cout << "Masukkan data ke-" << i + 1 << " = ";
     cin >> arr[i];
 }
-
-void bubbleSort() 
-{
-
-    int pass = 1; // step 1
-    do
-    {
-        for (int j = 0; j < count; j++) //step 2
-        {
-            if (arr[j] > arr[j + 1])
-            {
-                int temp;
-                temp = arr[j];
-                arr[j] = arr[j + 1];
-                arr[j + 1] = temp;
-            }
-        }
-
-
-    
-    pass = pass + 1; //step 4
-    } while (pass <= n - 1);
-}
-
-void displayData()
-{
-    
 }
 int main()
 {
+inputData();
 }
